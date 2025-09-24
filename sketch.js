@@ -1,6 +1,6 @@
 
 function preload() {
-    //load the images here
+   
     bg=loadImage("iss.png")
     sleep=loadImage("sleep.png")
     brush=loadImage("brush.png")
@@ -15,7 +15,7 @@ function preload() {
 
 function setup(){
     createCanvas(1000,800);
-    //create Astronaut sprite here
+    
   astronaut = createSprite (500,600)
   astronaut.addAnimation("sleeping",sleep)
   astronaut.scale=0.1
@@ -52,14 +52,14 @@ if(keyDown(RIGHT_ARROW)){
     astronaut.velocityX=0
     astronaut.velocityY=0
 }
-//keycode for d    
+  
 if(keyCode=="68"){
     astronaut.addAnimation("drinking",drink)
     astronaut.changeAnimation("drinking",drink)
     astronaut.velocityX=0
     astronaut.velocityY=0
 } 
-//keycode for s   
+ 
 if(keyCode=="83"){
     astronaut.addAnimation("sleeping",sleep)
     astronaut.changeAnimation("sleeping",sleep)
@@ -69,7 +69,7 @@ if(keyCode=="83"){
     
 }
 
-//Keycode for b
+
 if(keyCode=="66"){
     astronaut.addAnimation("bathing",bath)
     astronaut.changeAnimation("bathing",bath)
@@ -77,7 +77,7 @@ if(keyCode=="66"){
     astronaut.velocityY=0
 }
 
-//keycode for m
+
 if(keyCode=="77"){
     astronaut.addAnimation("moving",move)
     astronaut.changeAnimation("moving",move)
